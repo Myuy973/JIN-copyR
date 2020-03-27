@@ -25,5 +25,16 @@
     -moz-appearance: none;
     appearance: none;
     background: url(../img/chevron-down-solid.svg)
-                 no-repeat 97% center/7% auto;
+                 no-repeat 94% center/7% auto;
+}
+
+.introduction-title {
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #0D0015;
+    color: $introduction-main-color;
+    font-weight: normal;
+    height: 26px;
+    text-align: left;
+    line-height: 29px;
 }

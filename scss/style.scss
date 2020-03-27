@@ -16,12 +16,15 @@
 
 
 
+
 .post-img {
-    flex: .26;
-    padding-bottom: 11.25%;
+    flex: .53;
+    // padding-bottom: 11.25%;
+    padding-bottom: calc(33%*180/320);
     vertical-align: top;
     background: no-repeat top /100% auto;
-    margin-right: 15px;                        
+    margin-right: 12px;       
+    // background: red;                 
 }   
 .post-text {
     flex: 1;
@@ -38,15 +41,22 @@ body {
 }
 
 #main {
-    margin: 0 27px 32px 27px;
+    margin: 0 27px 31px 27px;
     @include pc-small() {
         margin: 0 11px 32px 8px;
+    }
+    @include tabled() {
+        margin: 0 11px 29px 13px;
     }
     #main-log {
         margin: 49px 0 56px 0;
         text-align: center;
         font-size: 32.64px;
-            letter-spacing: 2px;
+        letter-spacing: 2px;
+        @include tabled() {
+            padding-left: 11px;
+            margin: 61px 0 62px 0;
+        }
         a {
             color: $main-text-color;
             text-decoration: none;
@@ -59,6 +69,9 @@ body {
 
     #main-menu {
         margin-bottom: 39px;
+        @include tabled() {
+            display: none;
+        }
         ul {
             margin: 0 auto;
             width: 539px;
@@ -81,6 +94,9 @@ body {
         display: flex;
         margin: 0 auto;
         max-width: 1141.33px;
+        @include tabled() {
+            display: block;
+        }
     
         #article {
             flex: 2;
@@ -92,6 +108,7 @@ body {
                     display: flex;
                     &:not(:last-child) {
                         margin-bottom: 20px;
+                        @include tabled() { margin-bottom: 14px;}
                     }
                     td {
                         flex: 0.8;
@@ -112,20 +129,35 @@ body {
                                         font-size: 17px;
                                         letter-spacing: 2px;
                                     }
-                                    .p-margin1 { margin-bottom: 20px; @include pc-small() { margin-bottom: 22px;}}
-                                    .p-margin2 { margin-bottom: 46px; @include pc-small() { margin-bottom: 25px;}}
-                                    .p-margin8 { margin-bottom: 48px; @include pc-small() { margin-bottom: 25px;}}
-                                    .p-margin9 { margin-bottom: 47px; @include pc-small() { margin-bottom: 25px;}}
+                                    .p-margin1 { margin-bottom: 20px; 
+                                        @include pc-small() { margin-bottom: 22px;}
+                                        @include tabled() { margin-bottom: 16px;}
+                                    }
+                                    .p-margin2 { margin-bottom: 46px; 
+                                        @include pc-small() { margin-bottom: 25px;}
+                                        @include tabled() { margin-bottom: 15px;}
+                                    }
+                                    .p-margin8 { margin-bottom: 48px; 
+                                        @include pc-small() { margin-bottom: 25px;}
+                                        @include tabled() { margin-bottom: 13px;}
+                                    }
+                                    .p-margin9 { margin-bottom: 47px; 
+                                        @include pc-small() { margin-bottom: 25px;}
+                                        @include tabled() { margin-bottom: 14px;}
+                                    }
 
                                     .p-margin3, .p-margin4, .p-margin5, .p-margin6, 
                                     .p-margin7, .p-margin10, .p-margin11, .p-margin12 {
                                         margin-bottom: 23px;
                                         @include pc-small() { margin-bottom: 25px;}
+                                        @include tabled() { margin-bottom: 16px;}
+
                                     }
 
                                     small {
                                         float: right;
                                         margin-bottom: 4px;
+                                        @include tabled() { margin: 0 11px 2px 0;}
                                     }
 
                                     @include pc-small() {
@@ -136,6 +168,16 @@ body {
                                             margin-left: 2px;
                                         }
                                         small { font-size: 12px;}
+                                    }
+                                    @include tabled() {
+                                        padding: 0 9px;
+                                        p {
+                                            font-size: 12px;
+                                            margin-top: 8px;
+                                            letter-spacing: .7px;                                        }
+                                        small {
+                                            font-size: 10.4px;
+                                        }
                                     }
                                 }
                             }   
@@ -151,7 +193,18 @@ body {
                                         font-size: 8.5px;
                                     }
                                 }
+                                @include tabled() {
+                                    &::before {
+                                        font-size: 8px;
+                                        top: 7px;
+                                        left: 6px;
+                                        line-height: 17px;
+                                        width: 67px;
+                                        height: 16px;
+                                    }
+                                }
                             }
+
                             #content-img1 {
                                 background-image: url(../img/shutterstock_377522251-640x360.jpg);                                
                                 &::before { content: "JINのデザイン";  }
@@ -162,7 +215,7 @@ body {
                             }
                             #content-img3 {
                                 background-image: url(../img/shutterstock_295702355-320x180.jpg);                                
-                                &::before { content: "JINの特徴";  width: 70px;}
+                                &::before { content: "JINの特徴";  width: 70px; @include tabled(){ width: 52px;}}
                             }
                             #content-img4 {
                                 background-image: url(../img/shutterstock_527675818-320x180.jpg);                                padding-bottom: calc(100%*180/320);
@@ -174,7 +227,7 @@ body {
                             }
                             #content-img6 {
                                 background-image: url(../img/shutterstock_151174712-640x360.jpg);                                
-                                &::before { content: "収益化機能";  width: 73px;}
+                                &::before { content: "収益化機能";  width: 73px; @include tabled(){ width: 55px;}}
                             }
                             #content-img7 {
                                 background-image: url(../img/shutterstock_285640730-640x360.jpg);                                
@@ -182,23 +235,23 @@ body {
                             }
                             #content-img8 {
                                 background-image: url(../img/shutterstock_288725276-640x360.jpg);                                
-                                &::before { content: "JINの特徴"; width: 69px; }
+                                &::before { content: "JINの特徴"; width: 69px; @include tabled(){ width: 52px;} }
                             }
                             #content-img9 {
                                 background-image: url(../img/shutterstock_229543828-640x360.jpg);                                
-                                &::before { content: "収益化機能";  width: 74px;}
+                                &::before { content: "収益化機能";  width: 74px; @include tabled(){ width: 55px;}}
                             }
                             #content-img10 {
                                 background-image: url(../img/shutterstock_224637184-640x360.jpg);                                
-                                &::before { content: "JINの特徴";  width: 70px;}
+                                &::before { content: "JINの特徴";  width: 70px; @include tabled(){ width: 52px;}}
                             }
                             #content-img11 {
                                 background-image: url(../img/shutterstock_431592634-640x360.jpg);                                
-                                &::before { content: "収益化機能";  width: 70px;}
+                                &::before { content: "収益化機能";  width: 70px; @include tabled(){ width: 55px;}}
                             }
                             #content-img12 {
                                 background-image: url(../img/shutterstock_252732910-640x360.jpg);                                
-                                &::before { content: "収益化機能";  width: 70px;}
+                                &::before { content: "収益化機能";  width: 70px; @include tabled(){ width: 55px;}}
                             }
 
 
@@ -209,6 +262,9 @@ body {
                         }
                         .content-flex-right {
                             margin-left: 11px;
+                            @include tabled() {
+                                margin-left: 9px;
+                            }
                         }
                     }
                     
@@ -240,6 +296,14 @@ body {
                     cursor: pointer;
                     box-shadow: 0 1px 2px 0 $content-border;
                 }
+                @include tabled() {
+                    margin: 31px 0 33px 0;
+                    span {
+                        width: 33px;
+                        height: 33px;
+                        line-height: 34px;
+                    }
+                }
             }
             
         }
@@ -249,7 +313,11 @@ body {
         #introduction {
             flex: 0.92;
             // background: yellow;
-            margin-left: 30px;   
+            margin-left: 30px;
+
+            @include tabled() {
+                margin: 0;
+            }
             
             > div {
                 border-radius: 5px;
@@ -258,6 +326,15 @@ body {
             
             #theme-info {
                 margin-bottom: 26px;
+                @include tabled() {
+                    border: none;
+                    box-shadow: 0 0 0 1px $content-border, 
+                    0 0 0 13px #fff, 
+                    0 0 0 14px $content-border;
+                    border-radius: 0;
+                    padding-bottom: 3px;
+                    margin: 0 20px 42px 19px;
+                }
                 
                 h2 {
                     border-radius: 5px 5px 0 0;
@@ -270,17 +347,30 @@ body {
                     font-weight: normal;
                     padding: 9px 5px;
                     letter-spacing: 1px;
+                    @include tabled() { border-radius: 0;}
                 }
                 #theme-info-img {
                     background: url(../img/demo_banner.png)
                                 no-repeat center 60% / 88% auto;
                     padding-bottom: calc(100%*400/539);
+                    
+                    @include tabled() {
+                        background: url(../img/demo_banner.png)
+                                    no-repeat center 40% / 77% auto;
+                        padding-bottom: calc(86.5%*400/539);
+
+                    }
                 }
 
                 > p {
                     font-size: 14px;
                     margin: 14px 20px 21px 20px;
                     letter-spacing: .5px;
+                    @include tabled() {
+                        letter-spacing: 1.6px;
+                        // margin-bottom: 20px;
+                        margin: 12px 20px 20px 20px;
+                    }
                 }
 
                 #theme-info-btn {
@@ -292,6 +382,7 @@ body {
                     color: white;
                     border-radius: 30px;
                     border: 3px double #e22255;
+                    @include tabled() { margin-bottom: 16px;}
                     a {
                         text-decoration: none;
                         border-radius: 20px;
@@ -318,13 +409,12 @@ body {
                             }
                         }
                     }
-                        
-
                 }
             }
 
             #jin-info {
                 margin-bottom: 20px;
+                @include tabled() { margin-bottom: 26px;}
                 #jin-img {
                     width: 112px;
                     height: 112px;
@@ -343,6 +433,9 @@ body {
                     @include pc-small() {
                         margin-top: 26px;
                     }
+                    @include tabled() {
+                        margin-top: 26px;;
+                    }
                 }
 
                 > p:first-of-type {
@@ -355,6 +448,9 @@ body {
                         color: #c6c6c6;
                         font-size: 12px;
                     }
+                    @include tabled() {
+                        margin: 12px 0 10px 0;
+                    }
                 }
 
                 > p:last-of-type {
@@ -362,6 +458,9 @@ body {
                     line-height: 21px;
                     letter-spacing: .5px;
                     margin: 0 36px 20px 35px;
+                    @include tabled() {
+                        letter-spacing: .2px;
+                        margin: 0 22px 18px 22px;                    }
                 }
 
                 #jin-btn {
@@ -389,6 +488,11 @@ body {
                             margin: 0;
                         }
                     }
+
+                    @include tabled() {
+                        width: 45%;
+                        margin-bottom: 7px;
+                    }
                 }
 
                 #access {
@@ -405,6 +509,9 @@ body {
                         font-size: 13px;
                         letter-spacing: 2px;
                         margin: 0 0 11px 0;
+                        @include tabled() {
+                            margin-bottom: 6px;
+                        }
                     }
                     div {
                         span {
@@ -432,29 +539,57 @@ body {
 
             #recent-post {
                 margin-bottom: 17px;
+                @include tabled() { margin-bottom: 29px;}
                 h2 {
-                    font-size: 17px;
-                    letter-spacing: 1px;
-                    border-bottom: 1px solid #0D0015;
-                    color: $introduction-main-color;
-                    margin: 8% 9% 8% 8%;
-                    font-weight: normal;
-                    height: 26px;
+                    @extend .introduction-title;
+                    margin: 27px 30px 26px 28px;                    // font-weight: normal;
+
+                    @include tabled() {
+                        margin: 13px 16px 25px 17px;
+                    }
+
                 }
-                > a div { display: flex; padding: 0 8%;}
+                > a > div { 
+                    display: flex; 
+                    padding: 0 8%;
+                    @include tabled() {
+                        margin-bottom: 18px;
+                        padding: 0 2.5%;
+                    }
+                }
+
+                a > div > .post-img {
+                    @include tabled() {
+                        flex: .65;
+                        padding-bottom: calc(38%*180/320);
+                        margin-right: 28px;
+                    }
+                }
+                a > div > .post-text {
+                    @include tabled() {
+                        margin-top: 4px;
+                    }
+                }
                 a:not(:last-of-type) > div {
                     margin-bottom: 20px;
+                    @include tabled() {
+                        margin-bottom: 18px;
+                    }
                 }
                 a:last-of-type > div {
                     margin-bottom: 40px;
                     @include pc-small() {
                         margin-bottom: 15px;
                     }
+                    @include tabled() {
+                        margin-bottom: 24px;
+                    }
                 }
                 a {
                     text-decoration: none;
                     color: $introduction-main-color;
                 }
+
                 .post-name1 {
                     background-image: url(../img/shutterstock_377522251-320x180.jpg);
                 }                    
@@ -476,16 +611,16 @@ body {
             #category {
                 text-align: center;
                 margin-bottom: 20px;
+                @include tabled() {
+                    margin-bottom: 28px;
+                }
                 h2 {
-                    font-size: 17px;
-                    letter-spacing: 1px;
-                    border-bottom: 1px solid #0D0015;
-                    color: $introduction-main-color;
-                    margin: 8.5% 9% 4.5% 8%;
-                    font-weight: normal;
-                    height: 26px;
-                    text-align: left;
-                    line-height: 29px;
+                    @extend .introduction-title;
+                    margin: 30px 29px 16px 28px;                    // font-size: 17px;
+                    @include tabled() {
+                        margin: 12px 16px 14px 17px;
+                        letter-spacing: .4px;
+                    }
                 }
                 select {
                     @extend .select-mark-chenge;
@@ -496,24 +631,31 @@ body {
                     margin: 0 auto 29px auto;
                     color: #9C9C9C;
                     padding-left: 8px;
-                    outline: none;
+                    outline: 0;
+                    border: none;
                     @include pc-small() { margin-bottom: 15px;}
+                    @include tabled() {
+                        width: 95%;
+                        height: 42px;
+                        background-position: 98% center;
+                        background-size: 2% auto;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        line-height: 42px;
+                    }
                 }
 
             }
 
             #tag {
                 margin-bottom: 20px;
+                @include tabled() { margin-bottom: 27px;}
                 h2 {
-                    font-size: 17px;
-                    letter-spacing: 1px;
-                    border-bottom: 1px solid #0D0015;
-                    color: $introduction-main-color;
-                    margin: 8% 9% 4% 8%;
-                    font-weight: normal;
-                    height: 26px;
-                    text-align: left;
-                    line-height: 29px;
+                    @extend .introduction-title;
+                    margin: 28px 30px 15px 28px;
+                    @include tabled() {
+                        margin: 14px 15px 16px 17px;
+                    }
                 }
 
                 div {
@@ -522,6 +664,9 @@ body {
                         margin-bottom: 6px;
                     }
                     @include pc-small() { margin-bottom: 15px;}
+                    @include tabled() {
+                        margin: 0 18px 12px 17px;
+                    }
                     a {
                         text-decoration: none;
                         color: $introduction-main-color;
@@ -542,6 +687,12 @@ body {
                                 font-size: 8px;
                                 margin-right: 3px;
                             }
+
+                            @include tabled() {
+                                margin-right: 1px;
+                                font-size: 10px;
+                                line-height: 28px;
+                            }
                         }
                     }
                 }
@@ -550,16 +701,15 @@ body {
             #search {
                 position: relative;
                 margin-bottom: 16px;
+                @include tabled() {
+                    margin-bottom: 27px;
+                }
                 h2 {
-                    font-size: 17px;
-                    letter-spacing: 1px;
-                    border-bottom: 1px solid #0D0015;
-                    color: $introduction-main-color;
-                    margin: 8% 9% 4% 8%;
-                    font-weight: normal;
-                    height: 26px;
-                    text-align: left;
-                    line-height: 29px;
+                    @extend .introduction-title;
+                    margin: 26px 29px 15px 29px;
+                    @include tabled() {
+                        margin: 13px 16px 15px 17px;
+                    }
                 }
                 
                 input {
@@ -573,6 +723,12 @@ body {
                     border: 2px solid #a7a7a7;
                     @include pc-small() { 
                         margin-bottom: 15px;
+                    }
+                    @include tabled() {
+                        margin: 0 0 15px 17px;
+                        width: 95%;
+                        height: 27px;
+                        line-height: 27px;
                     }
                 }
 
@@ -590,36 +746,51 @@ body {
                         top: 61%;
                         right: 12%;
                     }
+                    @include tabled() {
+                        top: 60%;
+                        right: 4.5%;
+                    }
                 }
             }
 
             #recommend {
 
                 h2 {
-                    font-size: 17px;
-                    letter-spacing: 1px;
-                    border-bottom: 1px solid #0D0015;
-                    color: $introduction-main-color;
-                    margin: 8% 9% 7% 8%;
-                    font-weight: normal;
-                    height: 26px;
-                    text-align: left;
-                    line-height: 29px;
+                    @extend .introduction-title;
+                    margin: 28px 29px 26px 29px;
+                    @include tabled() {
+                        margin: 13px 16px 26px 17px;
+                    }
                 }
                 a  {
                     text-decoration: none;
                     color: $introduction-main-color;
                 }
-                > a div {
+                > a > div {
                     display: flex;
                     padding: 0 8%;
                     margin-bottom: 38px;
-                    @include pc-small() { margin-bottom: 15px;}    
+                    @include pc-small() { margin-bottom: 15px;}
+                    @include tabled() {
+                        margin-bottom: 25px;
+                        padding: 0 16px;
+                    }
                 } 
+                a > div > .post-img {
+                    flex: .65;
+                    padding-bottom: calc(37%*180/320);
+                    margin-right: 30px;
+                }
                 .re-post-name {
                     background-image: url(../img/shutterstock_204195961-320x180.jpg);
                 }
-                .post-text { letter-spacing: 1.5px;}
+                .post-text { 
+                    letter-spacing: 1.5px;
+                    @include tabled() {
+                        letter-spacing: 1px;
+                        margin-top: 3px;
+                    }
+                }
             }
         }
     }
@@ -677,7 +848,7 @@ footer {
 
             #ft-tag {
                 margin-top: 83px;
-                padding: 0 10% 14% 28px;
+                padding: 0 10% 49px 28px;
                 h2 {
                     font-size: 14px;
                     font-weight: normal;
