@@ -1197,6 +1197,12 @@ footer #footer-menu {
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu {
+    display: block;
+  }
+}
+
 footer #footer-menu #ft-jin {
   -webkit-box-flex: 0.8;
       -ms-flex: 0.8;
@@ -1218,8 +1224,22 @@ footer #footer-menu #ft-jin p:first-of-type {
   margin: 20px 27px 0 30px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin p:first-of-type {
+    margin: 38px 0 0 15px;
+    letter-spacing: 1.7px;
+  }
+}
+
 footer #footer-menu #ft-jin p:last-of-type {
   margin: 13px 27px 28px 30px;
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin p:last-of-type {
+    margin: 14px 27px 27px 18px;
+    letter-spacing: 2px;
+  }
 }
 
 footer #footer-menu #ft-jin #ft-jin-btn {
@@ -1231,6 +1251,12 @@ footer #footer-menu #ft-jin #ft-jin-btn {
   background: #E22255;
   margin: 0 auto;
   padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin #ft-jin-btn {
+    width: 76%;
+  }
 }
 
 footer #footer-menu #ft-jin #ft-jin-btn a {
@@ -1254,6 +1280,13 @@ footer #footer-menu #ft-jin #ft-tag {
   padding: 0 10% 49px 28px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin #ft-tag {
+    margin: 86px 0 45px 0;
+    padding: 0 13px 0 17px;
+  }
+}
+
 footer #footer-menu #ft-jin #ft-tag h2 {
   font-size: 14px;
   font-weight: normal;
@@ -1268,6 +1301,19 @@ footer #footer-menu #ft-jin #ft-tag h2::before {
   background: #9ACC1E;
   margin-right: 10px;
   vertical-align: -5px;
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin #ft-tag h2 {
+    border-bottom: 2px solid #9ACC1E;
+    height: 31px;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 2px;
+  }
+  footer #footer-menu #ft-jin #ft-tag h2::before {
+    display: none;
+  }
 }
 
 footer #footer-menu #ft-jin #ft-tag #ft-tag-content a {
@@ -1296,23 +1342,43 @@ footer #footer-menu #ft-jin #ft-tag #ft-tag-content a span::before {
   margin-right: 3px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-jin #ft-tag #ft-tag-content a span {
+    height: 21px;
+    line-height: 22px;
+    margin-bottom: 7px;
+    background: none;
+    font-size: 9px;
+    letter-spacing: .5px;
+  }
+}
+
 footer #footer-menu #ft-category, footer #footer-menu #ft-archives, footer #footer-menu #pc-small-ft-archives {
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
 }
 
-footer #footer-menu #ft-category div, footer #footer-menu #ft-archives div, footer #footer-menu #pc-small-ft-archives div {
+footer #footer-menu #ft-category #ft-category div,
+footer #footer-menu #ft-category #ft-archives div, footer #footer-menu #ft-category, footer #footer-menu #ft-archives #ft-category div,
+footer #footer-menu #ft-archives #ft-archives div, footer #footer-menu #ft-archives, footer #footer-menu #pc-small-ft-archives #ft-category div,
+footer #footer-menu #pc-small-ft-archives #ft-archives div, footer #footer-menu #pc-small-ft-archives {
   margin-left: 17px;
 }
 
-footer #footer-menu #ft-category div dt, footer #footer-menu #ft-archives div dt, footer #footer-menu #pc-small-ft-archives div dt {
+footer #footer-menu #ft-category #ft-category div dt,
+footer #footer-menu #ft-category #ft-archives div dt, footer #footer-menu #ft-category dt, footer #footer-menu #ft-archives #ft-category div dt,
+footer #footer-menu #ft-archives #ft-archives div dt, footer #footer-menu #ft-archives dt, footer #footer-menu #pc-small-ft-archives #ft-category div dt,
+footer #footer-menu #pc-small-ft-archives #ft-archives div dt, footer #footer-menu #pc-small-ft-archives dt {
   font-size: 15px;
   margin: 0 0 18px 0;
   letter-spacing: 1px;
 }
 
-footer #footer-menu #ft-category div dt::before, footer #footer-menu #ft-archives div dt::before, footer #footer-menu #pc-small-ft-archives div dt::before {
+footer #footer-menu #ft-category #ft-category div dt::before,
+footer #footer-menu #ft-category #ft-archives div dt::before, footer #footer-menu #ft-category dt::before, footer #footer-menu #ft-archives #ft-category div dt::before,
+footer #footer-menu #ft-archives #ft-archives div dt::before, footer #footer-menu #ft-archives dt::before, footer #footer-menu #pc-small-ft-archives #ft-category div dt::before,
+footer #footer-menu #pc-small-ft-archives #ft-archives div dt::before, footer #footer-menu #pc-small-ft-archives dt::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -1322,17 +1388,46 @@ footer #footer-menu #ft-category div dt::before, footer #footer-menu #ft-archive
   vertical-align: -4px;
 }
 
-footer #footer-menu #ft-category div dd, footer #footer-menu #ft-archives div dd, footer #footer-menu #pc-small-ft-archives div dd {
+@media (max-width: 767px) {
+  footer #footer-menu #ft-category #ft-category div dt,
+  footer #footer-menu #ft-category #ft-archives div dt, footer #footer-menu #ft-category dt, footer #footer-menu #ft-archives #ft-category div dt,
+  footer #footer-menu #ft-archives #ft-archives div dt, footer #footer-menu #ft-archives dt, footer #footer-menu #pc-small-ft-archives #ft-category div dt,
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dt, footer #footer-menu #pc-small-ft-archives dt {
+    border-bottom: 2px solid #9ACC1E;
+    height: 31px;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 29px;
+  }
+  footer #footer-menu #ft-category #ft-category div dt::before,
+  footer #footer-menu #ft-category #ft-archives div dt::before, footer #footer-menu #ft-category dt::before, footer #footer-menu #ft-archives #ft-category div dt::before,
+  footer #footer-menu #ft-archives #ft-archives div dt::before, footer #footer-menu #ft-archives dt::before, footer #footer-menu #pc-small-ft-archives #ft-category div dt::before,
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dt::before, footer #footer-menu #pc-small-ft-archives dt::before {
+    display: none;
+  }
+}
+
+footer #footer-menu #ft-category #ft-category div dd,
+footer #footer-menu #ft-category #ft-archives div dd, footer #footer-menu #ft-category dd, footer #footer-menu #ft-archives #ft-category div dd,
+footer #footer-menu #ft-archives #ft-archives div dd, footer #footer-menu #ft-archives dd, footer #footer-menu #pc-small-ft-archives #ft-category div dd,
+footer #footer-menu #pc-small-ft-archives #ft-archives div dd, footer #footer-menu #pc-small-ft-archives dd {
   font-size: 12px;
   margin: 0 0 13px 0;
 }
 
-footer #footer-menu #ft-category div dd a, footer #footer-menu #ft-archives div dd a, footer #footer-menu #pc-small-ft-archives div dd a {
+footer #footer-menu #ft-category #ft-category div dd a,
+footer #footer-menu #ft-category #ft-archives div dd a, footer #footer-menu #ft-category dd a, footer #footer-menu #ft-archives #ft-category div dd a,
+footer #footer-menu #ft-archives #ft-archives div dd a, footer #footer-menu #ft-archives dd a, footer #footer-menu #pc-small-ft-archives #ft-category div dd a,
+footer #footer-menu #pc-small-ft-archives #ft-archives div dd a, footer #footer-menu #pc-small-ft-archives dd a {
   text-decoration: none;
   color: white;
 }
 
-footer #footer-menu #ft-category div dd a::before, footer #footer-menu #ft-archives div dd a::before, footer #footer-menu #pc-small-ft-archives div dd a::before {
+footer #footer-menu #ft-category #ft-category div dd a::before,
+footer #footer-menu #ft-category #ft-archives div dd a::before, footer #footer-menu #ft-category dd a::before, footer #footer-menu #ft-archives #ft-category div dd a::before,
+footer #footer-menu #ft-archives #ft-archives div dd a::before, footer #footer-menu #ft-archives dd a::before, footer #footer-menu #pc-small-ft-archives #ft-category div dd a::before,
+footer #footer-menu #pc-small-ft-archives #ft-archives div dd a::before, footer #footer-menu #pc-small-ft-archives dd a::before {
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1340,20 +1435,57 @@ footer #footer-menu #ft-category div dd a::before, footer #footer-menu #ft-archi
   margin: 0 7px 0 4px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-category #ft-category div dd,
+  footer #footer-menu #ft-category #ft-archives div dd, footer #footer-menu #ft-category dd, footer #footer-menu #ft-archives #ft-category div dd,
+  footer #footer-menu #ft-archives #ft-archives div dd, footer #footer-menu #ft-archives dd, footer #footer-menu #pc-small-ft-archives #ft-category div dd,
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dd, footer #footer-menu #pc-small-ft-archives dd {
+    font-size: 13px;
+    margin: 16px 12px 0px 0px;
+    height: 33px;
+  }
+  footer #footer-menu #ft-category #ft-category div dd a,
+  footer #footer-menu #ft-category #ft-archives div dd a, footer #footer-menu #ft-category dd a, footer #footer-menu #ft-archives #ft-category div dd a,
+  footer #footer-menu #ft-archives #ft-archives div dd a, footer #footer-menu #ft-archives dd a, footer #footer-menu #pc-small-ft-archives #ft-category div dd a,
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dd a, footer #footer-menu #pc-small-ft-archives dd a {
+    display: block;
+    height: 34px;
+  }
+  footer #footer-menu #ft-category #ft-category div dd a::before,
+  footer #footer-menu #ft-category #ft-archives div dd a::before, footer #footer-menu #ft-category dd a::before, footer #footer-menu #ft-archives #ft-category div dd a::before,
+  footer #footer-menu #ft-archives #ft-archives div dd a::before, footer #footer-menu #ft-archives dd a::before, footer #footer-menu #pc-small-ft-archives #ft-category div dd a::before,
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dd a::before, footer #footer-menu #pc-small-ft-archives dd a::before {
+    content: "\f138";
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-category #ft-category div dd:not(:last-child),
+  footer #footer-menu #ft-category #ft-archives div dd:not(:last-child), footer #footer-menu #ft-category dd:not(:last-child), footer #footer-menu #ft-archives #ft-category div dd:not(:last-child),
+  footer #footer-menu #ft-archives #ft-archives div dd:not(:last-child), footer #footer-menu #ft-archives dd:not(:last-child), footer #footer-menu #pc-small-ft-archives #ft-category div dd:not(:last-child),
+  footer #footer-menu #pc-small-ft-archives #ft-archives div dd:not(:last-child), footer #footer-menu #pc-small-ft-archives dd:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+}
+
 footer #footer-menu #pc-small-ft-archives {
   display: none;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-}
-
-footer #footer-menu #pc-small-ft-archives div {
   margin: 53px 0 0 0;
 }
 
 @media (max-width: 1023px) {
   footer #footer-menu #pc-small-ft-archives {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #pc-small-ft-archives {
+    margin: 36px 0 41px 0;
   }
 }
 
@@ -1383,6 +1515,12 @@ footer #footer-menu #ft-popular-post > div {
   margin-left: 39px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div {
+    margin-left: 17px;
+  }
+}
+
 footer #footer-menu #ft-popular-post > div h2 {
   margin: 0 0 18px 0;
   font-weight: normal;
@@ -1399,9 +1537,22 @@ footer #footer-menu #ft-popular-post > div h2::before {
   vertical-align: -4px;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div h2 {
+    font-size: 17px;
+    letter-spacing: .8px;
+    margin-bottom: 25px;
+    height: 35px;
+  }
+  footer #footer-menu #ft-popular-post > div h2::before {
+    display: none;
+  }
+}
+
 footer #footer-menu #ft-popular-post > div table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
 }
 
 footer #footer-menu #ft-popular-post > div table tr {
@@ -1409,6 +1560,12 @@ footer #footer-menu #ft-popular-post > div table tr {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div table tr {
+    margin-bottom: 19px;
+  }
 }
 
 footer #footer-menu #ft-popular-post > div table tr a {
@@ -1441,16 +1598,41 @@ footer #footer-menu #ft-popular-post > div table tr td:first-child div::before {
   background: #9ACC1E;
 }
 
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div table tr td:first-child {
+    -webkit-box-flex: 1px;
+        -ms-flex: 1px;
+            flex: 1px;
+  }
+}
+
 footer #footer-menu #ft-popular-post > div table tr td:last-child {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
+footer #footer-menu #ft-popular-post > div table tr td:last-child a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 footer #footer-menu #ft-popular-post > div table tr td:last-child p {
   margin: 1px 11% 0 6%;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div table tr td:last-child {
+    -webkit-box-flex: 1.7;
+        -ms-flex: 1.7;
+            flex: 1.7;
+  }
+  footer #footer-menu #ft-popular-post > div table tr td:last-child p {
+    margin: 5px 5% 0 6%;
+  }
 }
 
 footer #footer-menu #ft-popular-post > div table tr #ft-pp-img1 {
@@ -1475,6 +1657,12 @@ footer #footer-menu #ft-popular-post > div table tr #ft-pp-img3 {
 
 footer #footer-menu #ft-popular-post > div table tr #ft-pp-img3::before {
   content: "3";
+}
+
+@media (max-width: 767px) {
+  footer #footer-menu #ft-popular-post > div table tr:last-child {
+    margin-bottom: 74px;
+  }
 }
 
 footer #footer-bottom {

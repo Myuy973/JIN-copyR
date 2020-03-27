@@ -805,6 +805,10 @@ footer {
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
+        @include tabled() {
+            display: block;
+        }
+
         #ft-jin {
             flex: 0.8;
             // background: rgb(88, 30, 247);
@@ -817,8 +821,20 @@ footer {
             p {
                 line-height: 25px;
                 font-size: 14px;
-                &:first-of-type {margin: 20px 27px 0 30px;}
-                &:last-of-type {margin: 13px 27px 28px 30px;}
+                &:first-of-type {
+                    margin: 20px 27px 0 30px;
+                    @include tabled() {
+                        margin: 38px 0 0 15px;
+                        letter-spacing: 1.7px;
+                    }
+                }
+                &:last-of-type {
+                    margin: 13px 27px 28px 30px;
+                    @include tabled() {
+                        margin: 14px 27px 27px 18px;
+                        letter-spacing: 2px;
+                    }
+                }
             }
             #ft-jin-btn {
                 width: 70%;
@@ -830,6 +846,7 @@ footer {
                 background: #E22255;
                 margin: 0 auto;
                 padding: 10px 0;
+                @include tabled() { width: 76%;}
                     a{
                         text-decoration: none;
                         color: white;
@@ -849,6 +866,10 @@ footer {
             #ft-tag {
                 margin-top: 83px;
                 padding: 0 10% 49px 28px;
+                @include tabled() {
+                    margin: 86px 0 45px 0;
+                    padding: 0 13px 0 17px;
+                }
                 h2 {
                     font-size: 14px;
                     font-weight: normal;
@@ -861,6 +882,17 @@ footer {
                         background: $footer-title-color;
                         margin-right: 10px;
                         vertical-align: -5px;
+                    }
+
+                    @include tabled() {
+                        border-bottom: 2px solid #9ACC1E;
+                        height: 31px;
+                        font-size: 15px;
+                        line-height: 17px;
+                        letter-spacing: 2px;
+                        &::before {
+                            display: none;
+                        }
                     }
                 }
                 #ft-tag-content {
@@ -885,6 +917,15 @@ footer {
                                 font-size: 8px;
                                 margin-right: 3px;
                             }
+
+                            @include tabled() {
+                                height: 21px;
+                                line-height: 22px;
+                                margin-bottom: 7px;
+                                background: none;
+                                font-size: 9px;
+                                letter-spacing: .5px;
+                            }
                         }
                     }
                 }
@@ -894,7 +935,9 @@ footer {
             flex: 0.4;
             // background: pink;
 
-            div {
+            #ft-category div,
+            #ft-archives div,
+            & {
                 margin-left: 17px;
                 dt {
                     font-size: 15px;
@@ -908,6 +951,18 @@ footer {
                         background: $footer-title-color;
                         margin-right: 9px;
                         vertical-align: -4px;
+                    }
+                    
+                    @include tabled() {
+                        border-bottom: 2px solid #9ACC1E;
+                        height: 31px;
+                        font-size: 15px;
+                        line-height: 17px;
+                        letter-spacing: 2px;
+                        margin-bottom: 29px;
+                        &::before {
+                            display: none;
+                        }
                     }
                 }
                 dd {
@@ -924,6 +979,26 @@ footer {
                             margin: 0 7px 0 4px;
                         }
                     }
+
+                    @include tabled() {
+                        font-size: 13px;
+                        margin: 16px 12px 0px 0px;
+                        height: 33px;
+                        a { 
+                            display: block;
+                            height: 34px;
+                            &::before {
+                                content: "\f138";
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                @include tabled() {
+                    dd:not(:last-child) {
+                        border-bottom: 1px solid white;
+                    }
                 }
             }
 
@@ -932,11 +1007,12 @@ footer {
         #pc-small-ft-archives {
             display: none;
             flex: none;
-            div {
-                margin: 53px 0 0 0;
-            }
+            margin: 53px 0 0 0;
             @include pc-small() {
                 display: block;
+            }
+            @include tabled() {
+                margin: 36px 0 41px 0;
             }
         }
         #ft-archives {
@@ -954,6 +1030,9 @@ footer {
             // background: orange;
             > div {
                 margin-left: 39px;
+                @include tabled() {
+                    margin-left: 17px;
+                }
                 h2 {
                     margin: 0 0 18px 0;
                     font-weight: normal;
@@ -967,13 +1046,24 @@ footer {
                         margin-right: 9px;
                         vertical-align: -4px;
                     }
+                    @include tabled() {
+                        font-size: 17px;
+                        letter-spacing: .8px;
+                        margin-bottom: 25px;
+                        height: 35px;
+                        &::before { display:  none;}
+                    }
                 }
                 table {
                     border-collapse: collapse;
                     border-spacing: 0;
+                    width: 100%;
                     tr {
                         display: flex;
                         margin-bottom: 18px;
+                        @include tabled() {
+                            margin-bottom: 19px;
+                        }
                         a{
                             text-decoration: none;
                             color: white;
@@ -999,14 +1089,29 @@ footer {
                                     background: $footer-title-color;
                                 }
                             }
+
+                            @include tabled() {
+                                flex: 1px;
+                            }
                         }
                         td:last-child {
                             flex: 1;
                             // background: skyblue;
+                            a {
+                                display: block;
+                                width: 100%; height: 100%;
+                            }
                             p {
                                 margin: 1px 11% 0 6%;
                                 font-size: 14px;
                                 line-height: 19px;
+                            }
+
+                            @include tabled() { 
+                                flex: 1.7;
+                                p {
+                                    margin: 5px 5% 0 6%;
+                                }
                             }
                         }
 
@@ -1021,6 +1126,12 @@ footer {
                         #ft-pp-img3 {
                             background-image: url(../img/shutterstock_204195961-320x180.jpg);
                             &::before { content: "3";}
+                        }
+                    }
+
+                    tr:last-child {
+                        @include tabled() {
+                            margin-bottom: 74px;
                         }
                     }
                 }
