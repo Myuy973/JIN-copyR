@@ -1,0 +1,1145 @@
+@charset "UTF-8";
+.img-tag, #main #main-content #article table tr td .content .content-img {
+  position: relative;
+  background: no-repeat top / 100% auto;
+  padding-bottom: calc(100%*180/320);
+}
+
+.img-tag::before, #main #main-content #article table tr td .content .content-img::before {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  width: 91px;
+  height: 25px;
+  border-radius: 15px;
+  font-size: 10px;
+  background: #9ACC1E;
+}
+
+.select-mark-chenge, #main #main-content #introduction #category select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/chevron-down-solid.svg) no-repeat 97% center/7% auto;
+}
+
+.post-img {
+  -webkit-box-flex: .26;
+      -ms-flex: .26;
+          flex: .26;
+  padding-bottom: 11.25%;
+  vertical-align: top;
+  background: no-repeat top /100% auto;
+  margin-right: 15px;
+}
+
+.post-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 13px;
+  margin: 0;
+  letter-spacing: .9px;
+  line-height: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+#main {
+  margin: 0 27px 32px 27px;
+}
+
+@media (max-width: 1023px) {
+  #main {
+    margin: 0 11px 32px 8px;
+  }
+}
+
+#main #main-log {
+  margin: 49px 0 56px 0;
+  text-align: center;
+  font-size: 32.64px;
+  letter-spacing: 2px;
+}
+
+#main #main-log a {
+  color: #322739;
+  text-decoration: none;
+}
+
+#main #main-log a span {
+  margin-right: .1%;
+  color: #9ACC1E;
+}
+
+#main #main-menu {
+  margin-bottom: 39px;
+}
+
+#main #main-menu ul {
+  margin: 0 auto;
+  width: 539px;
+}
+
+#main #main-menu ul li {
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+#main #main-menu ul li:not(:last-child) {
+  margin-right: 38px;
+}
+
+#main #main-menu ul li a {
+  font-size: 13px;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+#main #main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1141.33px;
+}
+
+#main #main-content #article {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#main #main-content #article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#main #main-content #article table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #main-content #article table tr:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#main #main-content #article table tr td {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+}
+
+#main #main-content #article table tr td .content {
+  border-radius: 5px;
+  border: 1px solid #F2F2F2;
+  background: white;
+  -webkit-box-shadow: 0 0 5px 0 #F2F2F2;
+          box-shadow: 0 0 5px 0 #F2F2F2;
+  height: calc(100% + 1px);
+}
+
+#main #main-content #article table tr td .content a {
+  display: inline-block;
+  text-decoration: none;
+  color: #322739;
+}
+
+#main #main-content #article table tr td .content a div {
+  padding: 0 15px;
+}
+
+#main #main-content #article table tr td .content a div p {
+  margin: 16px 0 0 0;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+#main #main-content #article table tr td .content a div .p-margin1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div .p-margin1 {
+    margin-bottom: 22px;
+  }
+}
+
+#main #main-content #article table tr td .content a div .p-margin2 {
+  margin-bottom: 46px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div .p-margin2 {
+    margin-bottom: 25px;
+  }
+}
+
+#main #main-content #article table tr td .content a div .p-margin8 {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div .p-margin8 {
+    margin-bottom: 25px;
+  }
+}
+
+#main #main-content #article table tr td .content a div .p-margin9 {
+  margin-bottom: 47px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div .p-margin9 {
+    margin-bottom: 25px;
+  }
+}
+
+#main #main-content #article table tr td .content a div .p-margin3, #main #main-content #article table tr td .content a div .p-margin4, #main #main-content #article table tr td .content a div .p-margin5, #main #main-content #article table tr td .content a div .p-margin6,
+#main #main-content #article table tr td .content a div .p-margin7, #main #main-content #article table tr td .content a div .p-margin10, #main #main-content #article table tr td .content a div .p-margin11, #main #main-content #article table tr td .content a div .p-margin12 {
+  margin-bottom: 23px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div .p-margin3, #main #main-content #article table tr td .content a div .p-margin4, #main #main-content #article table tr td .content a div .p-margin5, #main #main-content #article table tr td .content a div .p-margin6,
+  #main #main-content #article table tr td .content a div .p-margin7, #main #main-content #article table tr td .content a div .p-margin10, #main #main-content #article table tr td .content a div .p-margin11, #main #main-content #article table tr td .content a div .p-margin12 {
+    margin-bottom: 25px;
+  }
+}
+
+#main #main-content #article table tr td .content a div small {
+  float: right;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content a div p {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-top: 14px;
+    margin-left: 2px;
+  }
+  #main #main-content #article table tr td .content a div small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #article table tr td .content .content-img::before {
+    line-height: 20px;
+    width: 76px;
+    height: 18px;
+    border-radius: 15px;
+    font-size: 8.5px;
+  }
+}
+
+#main #main-content #article table tr td .content #content-img1 {
+  background-image: url(../img/shutterstock_377522251-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img1::before {
+  content: "JINのデザイン";
+}
+
+#main #main-content #article table tr td .content #content-img2 {
+  background-image: url(../img/shutterstock_279275555-320x180.jpg);
+  padding-bottom: calc(100%*180/320);
+}
+
+#main #main-content #article table tr td .content #content-img2::before {
+  content: "JINのデザイン";
+}
+
+#main #main-content #article table tr td .content #content-img3 {
+  background-image: url(../img/shutterstock_295702355-320x180.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img3::before {
+  content: "JINの特徴";
+  width: 70px;
+}
+
+#main #main-content #article table tr td .content #content-img4 {
+  background-image: url(../img/shutterstock_527675818-320x180.jpg);
+  padding-bottom: calc(100%*180/320);
+}
+
+#main #main-content #article table tr td .content #content-img4::before {
+  content: "JINのデザイン";
+}
+
+#main #main-content #article table tr td .content #content-img5 {
+  background-image: url(../img/shutterstock_471769004-320x180.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img5::before {
+  content: "JINのデザイン";
+}
+
+#main #main-content #article table tr td .content #content-img6 {
+  background-image: url(../img/shutterstock_151174712-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img6::before {
+  content: "収益化機能";
+  width: 73px;
+}
+
+#main #main-content #article table tr td .content #content-img7 {
+  background-image: url(../img/shutterstock_285640730-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img7::before {
+  content: "JINのエディタ";
+}
+
+#main #main-content #article table tr td .content #content-img8 {
+  background-image: url(../img/shutterstock_288725276-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img8::before {
+  content: "JINの特徴";
+  width: 69px;
+}
+
+#main #main-content #article table tr td .content #content-img9 {
+  background-image: url(../img/shutterstock_229543828-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img9::before {
+  content: "収益化機能";
+  width: 74px;
+}
+
+#main #main-content #article table tr td .content #content-img10 {
+  background-image: url(../img/shutterstock_224637184-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img10::before {
+  content: "JINの特徴";
+  width: 70px;
+}
+
+#main #main-content #article table tr td .content #content-img11 {
+  background-image: url(../img/shutterstock_431592634-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img11::before {
+  content: "収益化機能";
+  width: 70px;
+}
+
+#main #main-content #article table tr td .content #content-img12 {
+  background-image: url(../img/shutterstock_252732910-640x360.jpg);
+}
+
+#main #main-content #article table tr td .content #content-img12::before {
+  content: "収益化機能";
+  width: 70px;
+}
+
+#main #main-content #article table tr td .content-flex-left {
+  margin-right: 11px;
+}
+
+#main #main-content #article table tr td .content-flex-right {
+  margin-left: 11px;
+}
+
+#main #main-content #article #paging {
+  width: 100%;
+  height: 50px;
+  margin: 47px 0 0 0;
+  text-align: center;
+}
+
+#main #main-content #article #paging span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+}
+
+#main #main-content #article #paging span:nth-of-type(1) {
+  background: black;
+  color: white;
+}
+
+#main #main-content #article #paging span:nth-of-type(2) {
+  background: white;
+  border: 1px solid #F2F2F2;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 2px 0 #F2F2F2;
+          box-shadow: 0 1px 2px 0 #F2F2F2;
+}
+
+#main #main-content #introduction {
+  -webkit-box-flex: 0.92;
+      -ms-flex: 0.92;
+          flex: 0.92;
+  margin-left: 30px;
+}
+
+#main #main-content #introduction > div {
+  border-radius: 5px;
+  border: 1px solid #F2F2F2;
+}
+
+#main #main-content #introduction #theme-info {
+  margin-bottom: 26px;
+}
+
+#main #main-content #introduction #theme-info h2 {
+  border-radius: 5px 5px 0 0;
+  background: black;
+  color: white;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  font-size: 19px;
+  font-weight: normal;
+  padding: 9px 5px;
+  letter-spacing: 1px;
+}
+
+#main #main-content #introduction #theme-info #theme-info-img {
+  background: url(../img/demo_banner.png) no-repeat center 60%/88% auto;
+  padding-bottom: calc(100%*400/539);
+}
+
+#main #main-content #introduction #theme-info > p {
+  font-size: 14px;
+  margin: 14px 20px 21px 20px;
+  letter-spacing: .5px;
+}
+
+#main #main-content #introduction #theme-info #theme-info-btn {
+  margin: 0 auto 19px auto;
+  width: 78%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  border: 3px double #e22255;
+}
+
+#main #main-content #introduction #theme-info #theme-info-btn a {
+  text-decoration: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+#main #main-content #introduction #theme-info #theme-info-btn a p {
+  color: white;
+  font-size: 14.5px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 30px;
+  background: #e22255;
+}
+
+#main #main-content #introduction #theme-info #theme-info-btn a p::before {
+  content: "\f138";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+#main #main-content #introduction #jin-info {
+  margin-bottom: 20px;
+}
+
+#main #main-content #introduction #jin-info #jin-img {
+  width: 112px;
+  height: 112px;
+  background: url(../img/shutterstock_451391740-150x150.jpg) no-repeat center/100% auto;
+  border-radius: 50%;
+  border: 1px solid #F2F2F2;
+  -webkit-box-shadow: 0 1px 1px 0 #F2F2F2;
+          box-shadow: 0 1px 1px 0 #F2F2F2;
+  margin: 39px auto 0 auto;
+}
+
+#main #main-content #introduction #jin-info #jin-img a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #jin-info #jin-img {
+    margin-top: 26px;
+  }
+}
+
+#main #main-content #introduction #jin-info > p:first-of-type {
+  font-size: 15px;
+  text-align: center;
+  margin: 8px 0 22px 0;
+}
+
+#main #main-content #introduction #jin-info > p:first-of-type::after {
+  content: "\AWordPress Template";
+  white-space: pre;
+  color: #c6c6c6;
+  font-size: 12px;
+}
+
+#main #main-content #introduction #jin-info > p:last-of-type {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: .5px;
+  margin: 0 36px 20px 35px;
+}
+
+#main #main-content #introduction #jin-info #jin-btn {
+  width: 38%;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  border-radius: 30px;
+  border: 3px double #aaa;
+  margin: 0 auto 27px auto;
+  font-size: 11px;
+}
+
+#main #main-content #introduction #jin-info #jin-btn a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+#main #main-content #introduction #jin-info #jin-btn a p {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #aaa;
+  margin: 0;
+}
+
+#main #main-content #introduction #jin-info #access {
+  width: 100%;
+  height: 88px;
+  background: #9ACC1E;
+  text-align: center;
+}
+
+#main #main-content #introduction #jin-info #access p {
+  font-family: Arial;
+  text-align: center;
+  color: white;
+  padding: 20px 0 0 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 0 0 11px 0;
+}
+
+#main #main-content #introduction #jin-info #access div span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #ACD547;
+  border-radius: 1px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#main #main-content #introduction #jin-info #access div span a {
+  text-decoration: none;
+  color: white;
+}
+
+#main #main-content #introduction #jin-info #access div span a i {
+  font-size: 17px;
+}
+
+#main #main-content #introduction #jin-info #access div span:not(:first-of-type) {
+  margin-left: 4px;
+}
+
+#main #main-content #introduction #recent-post {
+  margin-bottom: 17px;
+}
+
+#main #main-content #introduction #recent-post h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #0D0015;
+  color: #3A2F40;
+  margin: 8% 9% 8% 8%;
+  font-weight: normal;
+  height: 26px;
+}
+
+#main #main-content #introduction #recent-post > a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 8%;
+}
+
+#main #main-content #introduction #recent-post a:not(:last-of-type) > div {
+  margin-bottom: 20px;
+}
+
+#main #main-content #introduction #recent-post a:last-of-type > div {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #recent-post a:last-of-type > div {
+    margin-bottom: 15px;
+  }
+}
+
+#main #main-content #introduction #recent-post a {
+  text-decoration: none;
+  color: #3A2F40;
+}
+
+#main #main-content #introduction #recent-post .post-name1 {
+  background-image: url(../img/shutterstock_377522251-320x180.jpg);
+}
+
+#main #main-content #introduction #recent-post .post-name2 {
+  background-image: url(../img/shutterstock_279275555-320x180.jpg);
+}
+
+#main #main-content #introduction #recent-post .post-name3 {
+  background-image: url(../img/shutterstock_295702355-320x180.jpg);
+}
+
+#main #main-content #introduction #recent-post .post-name4 {
+  background-image: url(../img/shutterstock_527675818-320x180.jpg);
+}
+
+#main #main-content #introduction #recent-post .post-name5 {
+  background-image: url(../img/shutterstock_471769004-320x180.jpg);
+}
+
+#main #main-content #introduction #category {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main #main-content #introduction #category h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #0D0015;
+  color: #3A2F40;
+  margin: 8.5% 9% 4.5% 8%;
+  font-weight: normal;
+  height: 26px;
+  text-align: left;
+  line-height: 29px;
+}
+
+#main #main-content #introduction #category select {
+  display: block;
+  background-color: #F6F6F6;
+  width: 85%;
+  height: 40px;
+  margin: 0 auto 29px auto;
+  color: #9C9C9C;
+  padding-left: 8px;
+  outline: none;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #category select {
+    margin-bottom: 15px;
+  }
+}
+
+#main #main-content #introduction #tag {
+  margin-bottom: 20px;
+}
+
+#main #main-content #introduction #tag h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #0D0015;
+  color: #3A2F40;
+  margin: 8% 9% 4% 8%;
+  font-weight: normal;
+  height: 26px;
+  text-align: left;
+  line-height: 29px;
+}
+
+#main #main-content #introduction #tag div {
+  margin: 0 29px 27px 29px;
+}
+
+#main #main-content #introduction #tag div a  span {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #tag div {
+    margin-bottom: 15px;
+  }
+}
+
+#main #main-content #introduction #tag div a {
+  text-decoration: none;
+  color: #3A2F40;
+}
+
+#main #main-content #introduction #tag div a span {
+  white-space: nowrap;
+  display: inline-block;
+  height: 24px;
+  line-height: 31px;
+  text-align: center;
+  background: #F6F6F6;
+  font-size: 11px;
+  padding: 0 8px;
+  margin-right: -1px;
+}
+
+#main #main-content #introduction #tag div a span::before {
+  content: "\f02b";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+#main #main-content #introduction #search {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#main #main-content #introduction #search h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #0D0015;
+  color: #3A2F40;
+  margin: 8% 9% 4% 8%;
+  font-weight: normal;
+  height: 26px;
+  text-align: left;
+  line-height: 29px;
+}
+
+#main #main-content #introduction #search input {
+  margin: 0 0 9% 8%;
+  width: 82%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  outline: 0;
+  border: 2px solid #a7a7a7;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #search input {
+    margin-bottom: 15px;
+  }
+}
+
+#main #main-content #introduction #search span {
+  display: inline-block;
+  position: absolute;
+  right: 11%;
+  top: 56%;
+  width: 17px;
+  height: 19px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #a7a7a7;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #search span {
+    top: 61%;
+    right: 12%;
+  }
+}
+
+#main #main-content #introduction #recommend h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #0D0015;
+  color: #3A2F40;
+  margin: 8% 9% 7% 8%;
+  font-weight: normal;
+  height: 26px;
+  text-align: left;
+  line-height: 29px;
+}
+
+#main #main-content #introduction #recommend a {
+  text-decoration: none;
+  color: #3A2F40;
+}
+
+#main #main-content #introduction #recommend > a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 8%;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 1023px) {
+  #main #main-content #introduction #recommend > a div {
+    margin-bottom: 15px;
+  }
+}
+
+#main #main-content #introduction #recommend .re-post-name {
+  background-image: url(../img/shutterstock_204195961-320x180.jpg);
+}
+
+#main #main-content #introduction #recommend .post-text {
+  letter-spacing: 1.5px;
+}
+
+footer {
+  background: #393542;
+  padding-top: 39px;
+  color: white;
+}
+
+footer #footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer #footer-menu #ft-jin {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  text-align: left;
+}
+
+footer #footer-menu #ft-jin #ft-jin-img {
+  background: url(../img/logo_white@2x.png) no-repeat center 83%/123px;
+  height: 79px;
+}
+
+footer #footer-menu #ft-jin p {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+footer #footer-menu #ft-jin p:first-of-type {
+  margin: 20px 27px 0 30px;
+}
+
+footer #footer-menu #ft-jin p:last-of-type {
+  margin: 13px 27px 28px 30px;
+}
+
+footer #footer-menu #ft-jin #ft-jin-btn {
+  width: 70%;
+  line-height: 21px;
+  border-radius: 60px;
+  text-align: center;
+  font-size: 14px;
+  background: #E22255;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+footer #footer-menu #ft-jin #ft-jin-btn a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+footer #footer-menu #ft-jin #ft-jin-btn a::before {
+  content: "\f138";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+footer #footer-menu #ft-jin #ft-tag {
+  margin-top: 83px;
+  padding: 0 10% 14% 28px;
+}
+
+footer #footer-menu #ft-jin #ft-tag h2 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 13px;
+}
+
+footer #footer-menu #ft-jin #ft-tag h2::before {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  content: "";
+  background: #9ACC1E;
+  margin-right: 10px;
+  vertical-align: -5px;
+}
+
+footer #footer-menu #ft-jin #ft-tag #ft-tag-content a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #footer-menu #ft-jin #ft-tag #ft-tag-content a span {
+  white-space: nowrap;
+  display: inline-block;
+  height: 24px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 8px;
+  padding: 0 10px;
+  margin-right: -1px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+footer #footer-menu #ft-jin #ft-tag #ft-tag-content a span::before {
+  content: "\f02b";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+footer #footer-menu #ft-category, footer #footer-menu #ft-archives, footer #footer-menu #pc-small-ft-archives {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+footer #footer-menu #ft-category div, footer #footer-menu #ft-archives div, footer #footer-menu #pc-small-ft-archives div {
+  margin-left: 17px;
+}
+
+footer #footer-menu #ft-category div dt, footer #footer-menu #ft-archives div dt, footer #footer-menu #pc-small-ft-archives div dt {
+  font-size: 15px;
+  margin: 0 0 18px 0;
+  letter-spacing: 1px;
+}
+
+footer #footer-menu #ft-category div dt::before, footer #footer-menu #ft-archives div dt::before, footer #footer-menu #pc-small-ft-archives div dt::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: #9ACC1E;
+  margin-right: 9px;
+  vertical-align: -4px;
+}
+
+footer #footer-menu #ft-category div dd, footer #footer-menu #ft-archives div dd, footer #footer-menu #pc-small-ft-archives div dd {
+  font-size: 12px;
+  margin: 0 0 13px 0;
+}
+
+footer #footer-menu #ft-category div dd a, footer #footer-menu #ft-archives div dd a, footer #footer-menu #pc-small-ft-archives div dd a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #footer-menu #ft-category div dd a::before, footer #footer-menu #ft-archives div dd a::before, footer #footer-menu #pc-small-ft-archives div dd a::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0 7px 0 4px;
+}
+
+footer #footer-menu #pc-small-ft-archives {
+  display: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+footer #footer-menu #pc-small-ft-archives div {
+  margin: 53px 0 0 0;
+}
+
+@media (max-width: 1023px) {
+  footer #footer-menu #pc-small-ft-archives {
+    display: block;
+  }
+}
+
+footer #footer-menu #ft-archives {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+footer #footer-menu #ft-archives div {
+  margin-left: 28px;
+}
+
+@media (max-width: 1023px) {
+  footer #footer-menu #ft-archives div {
+    display: none;
+  }
+}
+
+footer #footer-menu #ft-popular-post {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer #footer-menu #ft-popular-post > div {
+  margin-left: 39px;
+}
+
+footer #footer-menu #ft-popular-post > div h2 {
+  margin: 0 0 18px 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+footer #footer-menu #ft-popular-post > div h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: #9ACC1E;
+  margin-right: 9px;
+  vertical-align: -4px;
+}
+
+footer #footer-menu #ft-popular-post > div table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer #footer-menu #ft-popular-post > div table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+footer #footer-menu #ft-popular-post > div table tr a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #footer-menu #ft-popular-post > div table tr td:first-child {
+  -webkit-box-flex: .45;
+      -ms-flex: .45;
+          flex: .45;
+}
+
+footer #footer-menu #ft-popular-post > div table tr td:first-child div {
+  position: relative;
+  margin: 0;
+  padding-bottom: calc(100%*180/320);
+  background: no-repeat center center/100%;
+}
+
+footer #footer-menu #ft-popular-post > div table tr td:first-child div::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 11px;
+  background: #9ACC1E;
+}
+
+footer #footer-menu #ft-popular-post > div table tr td:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer #footer-menu #ft-popular-post > div table tr td:last-child p {
+  margin: 1px 11% 0 6%;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img1 {
+  background-image: url(../img/shutterstock_377522251-320x180.jpg);
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img1::before {
+  content: "1";
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img2 {
+  background-image: url(../img/shutterstock_279275555-320x180.jpg);
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img2::before {
+  content: "2";
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img3 {
+  background-image: url(../img/shutterstock_204195961-320x180.jpg);
+}
+
+footer #footer-menu #ft-popular-post > div table tr #ft-pp-img3::before {
+  content: "3";
+}
+
+footer #footer-bottom {
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+}
+
+footer #footer-bottom small {
+  font-size: 12px;
+}
+
+#top-return {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 53px;
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  background: #393542;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
