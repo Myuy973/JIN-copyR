@@ -5,6 +5,7 @@
   padding-bottom: calc(100%*180/320);
 }
 
+
 .img-tag::before, #main #main-content #article table tr td .content .content-img::before {
   color: white;
   position: absolute;
