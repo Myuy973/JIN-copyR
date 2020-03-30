@@ -38,3 +38,46 @@
     text-align: left;
     line-height: 29px;
 }
+
+@keyframes article-animate-big {
+    0% {
+        // transform: translateY(50px);
+        margin-top: 50px;
+    }
+    100% {
+        // transform: translateY(0px);
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes article-animate-min {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes main-log-big {
+    100% {
+        margin-top: 61px;
+    }
+}
+@keyframes main-log-min {
+    0% {
+        margin-top: 61px;
+    }
+    100% {
+        margin-top: 49px;
+        margin-bottom: 56px;
+        opacity: 1;
+    }
+}
+
+@keyframes main-menu-big {
+    100% {
+        opacity: 1;
+    }
+}

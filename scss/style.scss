@@ -32,7 +32,9 @@
     margin: 0;
     letter-spacing: .9px;
     line-height: 18px;
-}                    
+}     
+
+
 
 
 body {
@@ -53,9 +55,16 @@ body {
         text-align: center;
         font-size: 32.64px;
         letter-spacing: 2px;
+        @media (min-width: 767px) {
+            opacity: 0;
+            margin-bottom: 44px;
+            animation: main-log-min 2s .5s forwards;
+        }
         @include tabled() {
             padding-left: 11px;
-            margin: 61px 0 62px 0;
+            margin: 49px 0 62px 0;
+            font-weight: bold;
+            animation: main-log-big 1s forwards;
         }
         a {
             color: $main-text-color;
@@ -69,6 +78,10 @@ body {
 
     #main-menu {
         margin-bottom: 39px;
+        @media (min-width: 767px) {
+            opacity: 0;
+            animation: main-menu-big 2s .5s forwards;
+        }
         @include tabled() {
             display: none;
         }
@@ -76,11 +89,34 @@ body {
             margin: 0 auto;
             width: 539px;
             li {
+                position: relative;
                 display: inline-block;
+                vertical-align: top;
                 letter-spacing: 2px;
                 &:not(:last-child) {
                     margin-right: 38px;
                 }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 140%;
+                    opacity: 0;
+                    height: 5px;
+                    border-top: 2px solid black;
+                    position: absolute;
+                    top: 40px;
+                    right: -17%;
+                    transition: .5s;
+                }
+                &:hover {
+                    &::after {
+                        display: inline-block;
+                        opacity: 1;
+                        top: 22px;
+                        right: -17%;
+                    }
+                }
+
                 a {
                     font-size: 13px;
                     color: $main-menu;
@@ -97,10 +133,21 @@ body {
         @include tabled() {
             display: block;
         }
+
     
         #article {
             flex: 2;
             // background: yellowgreen;
+            @media (min-width: 767px) {
+                opacity: 0;
+
+                animation: article-animate-big 2s .5s forwards ;
+            }
+            @include tabled() {
+                opacity: 0;
+                animation: article-animate-min 1s .5s forwards;
+            }
+
             table {
                 border-collapse: collapse;
                 border-spacing: 0;
@@ -113,11 +160,18 @@ body {
                     td {
                         flex: 0.8;
                         .content {
+                            position: relative;
+                            top: 0;
+                            transition: .5s;
                             border-radius: 5px;
                             border: 1px solid #F2F2F2;
                             background: white;
                             box-shadow: 0 0 5px 0 $content-border;
                             height: calc(100% + 1px);
+                            &:hover {
+                                box-shadow: 0 0 20px 1px #dbdbdb;
+                                top: -5px;
+                            }
                             a {
                                 display: inline-block;
                                 text-decoration: none;
@@ -291,10 +345,18 @@ body {
                     color: white;
                 }
                 span:nth-of-type(2) {
+                    position: relative;
+                    top: 0;
                     background: white;
                     border: 1px solid $content-border;
                     cursor: pointer;
                     box-shadow: 0 1px 2px 0 $content-border;
+                    transition: .5s;
+                    &:hover {
+                        top: -10px;
+                        background: #86808A;
+                        color: white;
+                    }
                 }
                 @include tabled() {
                     margin: 31px 0 33px 0;
@@ -382,6 +444,14 @@ body {
                     color: white;
                     border-radius: 30px;
                     border: 3px double #e22255;
+                    transition: .5s;
+                    &:hover {
+                        border: 3px double #E95980;
+                        a p {
+                            background: #E95980;
+                        }
+
+                    }
                     @include tabled() { margin-bottom: 16px;}
                     a {
                         text-decoration: none;
@@ -390,6 +460,7 @@ body {
                         height: 100%;
                         display: inline-block;
                         p {
+                            transition: .5s;
                             color: white;
                             font-size: 14.5px;
                             font-weight: bold;
@@ -424,6 +495,10 @@ body {
                     border: 1px solid $content-border;
                     box-shadow: 0 1px 1px 0 $content-border;
                     margin: 39px auto 0 auto;
+                    transition: .4s;
+                    &:hover {
+                        background-size: 110%;
+                    }
                     a {
                         display: inline-block;
                         width: 100%;
@@ -472,6 +547,13 @@ body {
                     border: 3px double #aaa;
                     margin: 0 auto 27px auto;
                     font-size: 11px;
+                    transition: .5s;
+                    &:hover {
+                        border: 3px double #C0C0C0;
+                        a p {
+                            background: #C0C0C0;
+                        }
+                    }
                     a {
                         text-decoration: none;
                         color: white;
@@ -480,6 +562,7 @@ body {
                         height: 100%;
                         border-radius: 30px;
                         p {
+                            transition: .5s;
                             display: block;
                             width: 100%;
                             height: 100%;
@@ -522,6 +605,10 @@ body {
                             border-radius: 1px;
                             line-height: 35px;
                             text-align: center;
+                            transition: .3s;
+                            &:hover {
+                                transform: scale(1.1, 1.1);
+                            }
                             a {
                                 text-decoration: none;
                                 color: white;
@@ -539,10 +626,11 @@ body {
 
             #recent-post {
                 margin-bottom: 17px;
+                padding: 0 8%;
                 @include tabled() { margin-bottom: 29px;}
                 h2 {
                     @extend .introduction-title;
-                    margin: 27px 30px 26px 28px;                    // font-weight: normal;
+                    margin: 8% 0 26px 0;
 
                     @include tabled() {
                         margin: 13px 16px 25px 17px;
@@ -551,7 +639,6 @@ body {
                 }
                 > a > div { 
                     display: flex; 
-                    padding: 0 8%;
                     @include tabled() {
                         margin-bottom: 18px;
                         padding: 0 2.5%;
@@ -569,6 +656,10 @@ body {
                     @include tabled() {
                         margin-top: 4px;
                     }
+                }
+                p { transition: .4s;}
+                a:hover div p {
+                    color: #E22255;
                 }
                 a:not(:last-of-type) > div {
                     margin-bottom: 20px;
@@ -616,7 +707,7 @@ body {
                 }
                 h2 {
                     @extend .introduction-title;
-                    margin: 30px 29px 16px 28px;                    // font-size: 17px;
+                    margin: 9% 29px 16px 28px;                    // font-size: 17px;
                     @include tabled() {
                         margin: 12px 16px 14px 17px;
                         letter-spacing: .4px;
@@ -652,7 +743,7 @@ body {
                 @include tabled() { margin-bottom: 27px;}
                 h2 {
                     @extend .introduction-title;
-                    margin: 28px 30px 15px 28px;
+                    margin: 8% 30px 15px 28px;
                     @include tabled() {
                         margin: 14px 15px 16px 17px;
                     }
@@ -674,12 +765,18 @@ body {
                             white-space: nowrap;
                             display: inline-block;
                             height: 24px;
-                            line-height: 31px;
+                            line-height: 27px;
                             text-align: center;
                             background: #F6F6F6;
                             font-size: 11px;
                             padding: 0 8px;
-                            margin-right: -1px;  
+                            margin-right: -1px;
+                            border-radius: 2px;
+                            transition: .5s;
+                            &:hover {
+                                background: #0D0015;
+                                color: white;
+                            }  
                             &::before {
                                 content: "\f02b";
                                 font-weight: 900;
@@ -706,7 +803,7 @@ body {
                 }
                 h2 {
                     @extend .introduction-title;
-                    margin: 26px 29px 15px 29px;
+                    margin: 7% 29px 15px 29px;
                     @include tabled() {
                         margin: 13px 16px 15px 17px;
                     }
@@ -754,21 +851,25 @@ body {
             }
 
             #recommend {
+                padding: 0 8%;
 
                 h2 {
                     @extend .introduction-title;
-                    margin: 28px 29px 26px 29px;
+                    margin: 9% 0 26px 0;
                     @include tabled() {
-                        margin: 13px 16px 26px 17px;
+                        margin: 13px 0 26px 0;
                     }
                 }
                 a  {
                     text-decoration: none;
                     color: $introduction-main-color;
+                    transition: .5s;
+                }
+                a:hover {
+                    color: #E22255;
                 }
                 > a > div {
                     display: flex;
-                    padding: 0 8%;
                     margin-bottom: 38px;
                     @include pc-small() { margin-bottom: 15px;}
                     @include tabled() {
@@ -776,10 +877,12 @@ body {
                         padding: 0 16px;
                     }
                 } 
+
                 a > div > .post-img {
-                    flex: .65;
+                    flex: .53;
                     padding-bottom: calc(37%*180/320);
-                    margin-right: 30px;
+                    margin-right: 11px;
+
                 }
                 .re-post-name {
                     background-image: url(../img/shutterstock_204195961-320x180.jpg);
@@ -910,6 +1013,11 @@ footer {
                             margin-right: -1px;
                             border-radius: 2px;
                             background: rgba(255, 255, 255, 0.25);
+                            transition: .5s;
+                            &:hover {
+                                background: #190D21;
+                                color: white;
+                            }
                             &::before {
                                 content: "\f02b";
                                 font-weight: 900;
@@ -966,8 +1074,14 @@ footer {
                     }
                 }
                 dd {
+                    position: relative;
+                    left: 0;
                     font-size: 12px;
                     margin: 0 0 13px 0;
+                    transition: .5s;
+                    &:hover {
+                        left: 10px;
+                    }
                     a {
                         text-decoration: none;
                         color: white;
@@ -1155,6 +1269,7 @@ footer {
 
 
 #top-return {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -1167,4 +1282,12 @@ footer {
     background: #393542;
     border-radius: 50%;
     cursor: pointer;
+    @include tabled() {
+        right: 20px;
+        bottom: 125px;
+        width: 43px;
+        height: 43px;
+        line-height: 45px;
+        font-size: 27px;
+    }
 }
